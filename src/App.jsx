@@ -42,17 +42,16 @@ function App() {
         />
         <button type="submit">Search</button>
       </form>
-      <div>
-        {
-          definition && (
-          <>
-            <h5>Defination:</h5>
-            <p>{definition}</p>
-          </>
-          )
-        }
 
-      </div>
+      {
+        definition && (
+        <>
+          <h5>Definition:</h5>
+          <p>{definition}</p>
+        </>
+        )
+      }
+
     </div>
   )
 }
