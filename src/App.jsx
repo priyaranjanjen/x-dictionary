@@ -34,7 +34,7 @@ function App() {
       <h1>Dictionary App</h1>
 
       <form onSubmit={handleSubmit}>
-        <input required 
+        <input
           type="text" 
           placeholder="Search for a word..."
           value={word}
@@ -43,14 +43,8 @@ function App() {
         <button type="submit">Search</button>
       </form>
 
-      {
-        definition && (
-        <>
-          <h5>Definition:</h5>
-          <p>{definition}</p>
-        </>
-        )
-      }
+      <h5>Definition:</h5>
+      <p>{definition}</p>
 
     </div>
   )
